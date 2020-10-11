@@ -85,10 +85,10 @@ public class Calculator {
 			break;
 		default:
 			System.out.println("[*] Your input is invalid. Please mind that only the numbers "
-					+ "1 | 2 | 3 | 4 | 5 are allowed! Calculator will be terminated now. Please try again.");
-			return;
+					+ "1 | 2 | 3 | 4 | 5 are allowed!");
+			System.out.println("[*] Current calculation was terminated. Please try again.");
 		}
-
+		return;
 	}
 
 	// MAIN METHOD BELOW
@@ -122,7 +122,7 @@ public class Calculator {
 				calculate(calcMethod, numberOne, numberTwo, choice);
 			} catch (NumberFormatException e) {
 				System.out.println("[*] Error: You have typed in invalid values for the calculation. "
-						+ "Make sure to type in only numbers - nothing else is allowed!");
+						+ "Make sure to type in only single numbers - nothing else is allowed!");
 				System.out.println("[*] Calculator will be terminated now. Please try again.");
 				return;
 			}
