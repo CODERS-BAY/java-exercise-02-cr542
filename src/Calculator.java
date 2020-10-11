@@ -84,7 +84,8 @@ public class Calculator {
 			// But hey, practice makes perfect :-)
 			break;
 		default:
-			System.out.println("[*] Your input is invalid. Calculator will be terminated.");
+			System.out.println("[*] Your input is invalid. Please mind that only the numbers "
+					+ "1 | 2 | 3 | 4 | 5 are allowed! Calculator will be terminated now. Please try again.");
 			return;
 		}
 
@@ -121,8 +122,8 @@ public class Calculator {
 				calculate(calcMethod, numberOne, numberTwo, choice);
 			} catch (NumberFormatException e) {
 				System.out.println("[*] Error: You have typed in invalid values for the calculation. "
-						+ "Make sure to type in numbers - nothing else is allowed!");
-				System.out.println("[*] Calculator is being terminated now. Please try again.");
+						+ "Make sure to type in only numbers - nothing else is allowed!");
+				System.out.println("[*] Calculator will be terminated now. Please try again.");
 				return;
 			}
 
